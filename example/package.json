@@ -1,0 +1,52 @@
+{
+    "name": "inverst-system",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "serve": "vue-cli-service serve",
+      "build": "vue-cli-service build --modern",
+      "test:unit": "vue-cli-service test:unit",
+      "test:e2e": "vue-cli-service test:e2e",
+      "eslint": "vue-cli-service lint",
+      "stylelint": "stylelint --cache **/*.{html,vue,css,less}",
+      "eslint:fix": "vue-cli-service lint --fix",
+      "stylelint:fix": "stylelint --cache **/*.{html,vue,css,less} --fix"
+    },
+    "dependencies": {
+      "@riophae/vue-treeselect": "^0.4.0",
+      "@vue/composition-api": "^1.0.0-beta.21",
+      "core-js": "^3.6.5",
+      "sass-loader": "^10.1.0",
+      "vue": "^2.6.11",
+      "vue-router": "^3.2.0",
+      "vuex": "^3.4.0"
+    },
+    "devDependencies": {
+      "@form-create/element-ui": "^1.0.20",
+      "@icon-park/vue": "^1.1.5-alpha.0",
+      "@vue/cli-plugin-babel": "~4.5.0",
+      "@vue/cli-plugin-e2e-cypress": "~4.5.0",
+      "@vue/cli-plugin-eslint": "~4.5.0",
+      "@vue/cli-plugin-router": "~4.5.0",
+      "@vue/cli-plugin-unit-jest": "~4.5.0",
+      "@vue/cli-plugin-vuex": "~4.5.0",
+      "@vue/cli-service": "~4.5.0",
+      "@vue/eslint-config-standard": "^5.1.2",
+      "@vue/test-utils": "^1.0.3",
+      "eslint-config-hrvc": "^1.0.0"
+    },
+    "gitHooks": {
+      "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+      "*.{js,jsx,vue}": [
+        "vue-cli-service lint",
+        "git add"
+      ],
+      "*.{html,vue,css,less}": [
+        "stylelint --cache **/*.{html,vue,css,less} --fix",
+        "git add"
+      ]
+    }
+  }
+  
