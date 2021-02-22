@@ -272,10 +272,6 @@ module.exports = {
      */
     'no-lone-blocks': 'error',
     /**
-     * 禁止使用超出 js 精度范围的数字
-     */
-    'no-loss-of-precision': 'error',
-    /**
      * 禁止使用 magic numbers
      */
     'no-magic-numbers': 'error',
@@ -318,10 +314,6 @@ module.exports = {
      * 禁止对函数的参数重新赋值
      */
     'no-param-reassign': 'error',
-    /**
-     * 禁止在 Promise 的回调函数中直接 return
-     */
-    'no-promise-executor-return': 'error',
     /**
      * 禁止使用 __proto__
      * @reason __proto__ 是已废弃的语法
@@ -384,10 +376,6 @@ module.exports = {
      */
     'no-unreachable': 'error',
     /**
-     * 禁止在第一轮循环时就一定会退出循环的情况出现
-     */
-    'no-unreachable-loop': 'error',
-    /**
      * 禁止在 finally 中出现 return, throw, break 或 continue
      * @reason finally 中的语句会在 try 之前执行
      */
@@ -396,10 +384,6 @@ module.exports = {
      * 禁止在 in 或 instanceof 操作符的左侧变量前使用感叹号
      */
     'no-unsafe-negation': 'error',
-    /**
-     * 禁止使用不安全的 optional chaining
-     */
-    'no-unsafe-optional-chaining': 'error',
     /**
      * 禁止无用的表达式
      */
