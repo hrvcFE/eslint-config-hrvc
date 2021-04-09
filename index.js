@@ -274,7 +274,10 @@ module.exports = {
     /**
      * 禁止使用 magic numbers
      */
-    'no-magic-numbers': 'error',
+    'no-magic-numbers': ['error', {
+      'ignoreArrayIndexes': true,
+      'ignore': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    }],
     /**
      * 禁止正则表达式中使用肉眼无法区分的特殊字符
      * @reason 某些特殊字符很难看出差异，最好不要在正则中使用
