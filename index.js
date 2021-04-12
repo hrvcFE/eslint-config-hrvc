@@ -22,6 +22,9 @@ module.exports = {
       modules: true
     }
   },
+  plugins: [
+    '@typescript-eslint'
+  ],
   rules: {
     /**
      * 强制缩进为 2 空格
@@ -390,7 +393,8 @@ module.exports = {
     /**
      * 禁止无用的表达式
      */
-    'no-unused-expressions': [
+    'no-unused-expressions': 'off',
+    '@typescript-eslint/no-unused-expressions': [
       'error',
       {
         'allowShortCircuit': true,
@@ -401,7 +405,8 @@ module.exports = {
     /**
      * 已定义的变量必须使用
      */
-    'no-unused-vars': [
+     'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': [
       'error',
       {
         'vars': 'all',
