@@ -29,7 +29,8 @@ module.exports = {
     /**
      * 强制缩进为 2 空格
      */
-    'indent': ['error', 2],
+    'indent': 'off',
+    '@typescript-eslint/indent': ['error', 2],
     'vue/html-indent': ['error', 2],
     /**
      * 单文件最长 666 行

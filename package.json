@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hrvc",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "description": "华睿投资前端团队通用ESLint配置检测规范",
   "main": "index.js",
   "scripts": {
