@@ -280,7 +280,7 @@ module.exports = {
      */
     'no-magic-numbers': ['error', {
       'ignoreArrayIndexes': true,
-      'ignore': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+      'ignore': [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     }],
     /**
      * 禁止正则表达式中使用肉眼无法区分的特殊字符
